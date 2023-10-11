@@ -15,3 +15,27 @@ $(document).ready(function () {
   });
 });
 
+//code isnt working as hoped. wont return image to normal size when clicked a second time on mobile device
+
+const images = document.querySelectorAll(".images");
+
+images.forEach((image) => {
+  let isEnlarged = false;
+
+  image.addEventListener("click", () => {
+    if (isEnlarged) {
+      image.classList.remove("enlarged");
+      isEnlarged = false;
+    } else {
+      image.classList.add("enlarged");
+      isEnlarged = true;
+    }
+  });
+
+  document.addEventListener("click", (event) => {
+    if (!image.contains(event.target)) {
+      image.classList.remove("enlarged");
+      isEnlarged = false;
+    }
+  });
+});
