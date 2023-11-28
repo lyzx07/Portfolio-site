@@ -136,12 +136,12 @@ p {
 }
 
 .card:hover {
-  transform: scale(1.9) rotate(10deg);
+  transform: scale(1.9) rotate(0deg);
   z-index: 50;
 }
 
 .angle:hover {
-  transform: scale(1.9) rotate(-10deg);
+  transform: scale(1.9) rotate(0deg);
   z-index: 50;
 }
 
