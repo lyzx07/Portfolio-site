@@ -106,7 +106,7 @@ p {
   justify-content: center;
 }
 
-.bottom {
+.bottom, .top {
   justify-content: center;
 }
 
